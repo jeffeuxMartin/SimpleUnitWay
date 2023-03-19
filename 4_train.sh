@@ -1,5 +1,6 @@
 #!sh
 expname=dedup
+expname=dwn_6_0__dedup
 
 CUDA_VISIBLE_DEVICES=0 fairseq-train \
     DataFairseqEncoded/$expname/data-bin/unit-eng \
@@ -17,4 +18,5 @@ CUDA_VISIBLE_DEVICES=0 fairseq-train \
     --eval-bleu-remove-bpe \
     --eval-bleu-print-samples \
     --best-checkpoint-metric bleu --maximize-best-checkpoint-metric \
-    --wandb-project SimpleUnit
+    --wandb-project SimpleUnit \
+    --save-dir ${expname}_results

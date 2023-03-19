@@ -1,7 +1,8 @@
 #!sh
 
-# for expname in dedup dwn_6_0 dwn_6_0__dedup dwn_6_3 dwn_6_3__dedup original; do
-for expname in dedup; do
+# for expname in dwn_6_0 dwn_6_0__dedup dwn_6_3 dwn_6_3__dedup original; do
+# for expname in dedup; do
+for expname in dwn_6_0__dedup dwn_6_3__dedup; do
     if [ ! -d DataFairseqEncoded/$expname ]; then
         mkdir -p DataFairseqEncoded/$expname;
     fi

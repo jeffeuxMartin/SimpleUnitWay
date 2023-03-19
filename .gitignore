@@ -1,6 +1,7 @@
 /0checkpoints
 /checkpoints
 /wandb
+/exps
 # -------------------------------------------------- #
 
 # Byte-compiled / optimized / DLL files
